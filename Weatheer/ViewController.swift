@@ -11,14 +11,11 @@ import UIKit
 class ViewController: UIViewController {
 
     let weatherData = dataLoader()
+    var globalCities : [City]?
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        print("2+2=4")
-        print("2+3=5")
-        print("2+4=6")
-        print("ViewDidLoad")
         weatherData.loadWeatherData(city: "Kyoto")
         loadCityJSON()
     }
@@ -36,12 +33,21 @@ class ViewController: UIViewController {
         do {
             let data = try Data(contentsOf: url)
             let cities = try JSONDecoder().decode([City].self, from: data)
-            //print(cities) - Funciona pero toca optimizar esta funcion
+            globalCities = cities
+            /*
             for city in cities {
                 print("\n\(city.name)")
-            }
+                print(city.coord)
+            }*/
+            
+            guard let unwrappedCities = globalCities else { return }
+            print(unwrappedCities.count)
+            ©
         }
-        catch {}
+        catch {
+            print("The JSON Decoder dont works")
+            return
+        }
     }
 
 }
@@ -52,19 +58,12 @@ struct City : Decodable {
     let id: Int
     let name: String
     let country: String
-    //let lon: Double
-    //let lat: Double
-    
-    
-    init(json : [String:Any]) {
-        
-        id = json["id"] as? Int ?? -1
-        name = json["name"] as? String ?? ""
-        country = json["country"] as? String ?? ""
-        //lon = json["coord"]!["lon"] as? Double ?? -0.1
-        //lat = json["coord"]!["lat"] as? Double ?? -0.1
-        
-    }
+    let coord: Coord
+}
+
+struct Coord : Decodable {
+    let lon: Double
+    let lat: Double
     
 }
 
