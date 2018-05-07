@@ -16,6 +16,8 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         print("2+2=4")
+        print("2+3=5")
+        print("2+4=6")
         print("ViewDidLoad")
         weatherData.loadWeatherData(city: "Kyoto")
         loadCityJSON()
