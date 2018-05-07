@@ -12,6 +12,8 @@
 		632B7DDA209EF01100BF16E2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 632B7DD8209EF01100BF16E2 /* Main.storyboard */; };
 		632B7DDC209EF01300BF16E2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 632B7DDB209EF01300BF16E2 /* Assets.xcassets */; };
 		632B7DDF209EF01300BF16E2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 632B7DDD209EF01300BF16E2 /* LaunchScreen.storyboard */; };
+		634B3ECB20A01BE5008FC66E /* DataLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 634B3ECA20A01BE5008FC66E /* DataLoader.swift */; };
+		636CB4C720A0475300613EBF /* city.json in Resources */ = {isa = PBXBuildFile; fileRef = 636CB4C620A0475200613EBF /* city.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		632B7DDB209EF01300BF16E2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		632B7DDE209EF01300BF16E2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		632B7DE0209EF01300BF16E2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		634B3ECA20A01BE5008FC66E /* DataLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataLoader.swift; sourceTree = "<group>"; };
+		636CB4C620A0475200613EBF /* city.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = city.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +58,24 @@
 		632B7DD3209EF01100BF16E2 /* Weatheer */ = {
 			isa = PBXGroup;
 			children = (
+				63BB2C4C20A047E90097E174 /* Resources */,
 				632B7DD4209EF01100BF16E2 /* AppDelegate.swift */,
 				632B7DD6209EF01100BF16E2 /* ViewController.swift */,
+				634B3ECA20A01BE5008FC66E /* DataLoader.swift */,
 				632B7DD8209EF01100BF16E2 /* Main.storyboard */,
 				632B7DDB209EF01300BF16E2 /* Assets.xcassets */,
 				632B7DDD209EF01300BF16E2 /* LaunchScreen.storyboard */,
 				632B7DE0209EF01300BF16E2 /* Info.plist */,
 			);
 			path = Weatheer;
+			sourceTree = "<group>";
+		};
+		63BB2C4C20A047E90097E174 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				636CB4C620A0475200613EBF /* city.json */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -124,6 +138,7 @@
 			files = (
 				632B7DDF209EF01300BF16E2 /* LaunchScreen.storyboard in Resources */,
 				632B7DDC209EF01300BF16E2 /* Assets.xcassets in Resources */,
+				636CB4C720A0475300613EBF /* city.json in Resources */,
 				632B7DDA209EF01100BF16E2 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -137,6 +152,7 @@
 			files = (
 				632B7DD7209EF01100BF16E2 /* ViewController.swift in Sources */,
 				632B7DD5209EF01100BF16E2 /* AppDelegate.swift in Sources */,
+				634B3ECB20A01BE5008FC66E /* DataLoader.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
