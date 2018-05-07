@@ -15,6 +15,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        print("2+2=4")
         print("ViewDidLoad")
         weatherData.loadWeatherData(city: "Kyoto")
         loadCityJSON()
