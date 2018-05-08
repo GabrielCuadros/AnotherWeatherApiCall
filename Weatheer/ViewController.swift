@@ -17,7 +17,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         weatherData.loadWeatherData(city: "Kyoto")
-        loadCityJSON()
+        //loadCityJSON()
     }
 
     override func didReceiveMemoryWarning() {
@@ -38,11 +38,17 @@ class ViewController: UIViewController {
             for city in cities {
                 print("\n\(city.name)")
                 print(city.coord)
-            }*/
+            }
+            */
             
             guard let unwrappedCities = globalCities else { return }
             print(unwrappedCities.count)
-            ©
+            
+            for city in unwrappedCities {
+                print("\n\(city.name), \(city.country)")
+                
+            }
+            
         }
         catch {
             print("The JSON Decoder dont works")

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6323FBF120A1651A006D0E08 /* Global_Functions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6323FBF020A1651A006D0E08 /* Global_Functions.swift */; };
 		632B7DD5209EF01100BF16E2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 632B7DD4209EF01100BF16E2 /* AppDelegate.swift */; };
 		632B7DD7209EF01100BF16E2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 632B7DD6209EF01100BF16E2 /* ViewController.swift */; };
 		632B7DDA209EF01100BF16E2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 632B7DD8209EF01100BF16E2 /* Main.storyboard */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6323FBF020A1651A006D0E08 /* Global_Functions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Global_Functions.swift; sourceTree = "<group>"; };
 		632B7DD1209EF01100BF16E2 /* Weatheer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Weatheer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		632B7DD4209EF01100BF16E2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		632B7DD6209EF01100BF16E2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -66,6 +68,7 @@
 				632B7DDB209EF01300BF16E2 /* Assets.xcassets */,
 				632B7DDD209EF01300BF16E2 /* LaunchScreen.storyboard */,
 				632B7DE0209EF01300BF16E2 /* Info.plist */,
+				6323FBF020A1651A006D0E08 /* Global_Functions.swift */,
 			);
 			path = Weatheer;
 			sourceTree = "<group>";
@@ -152,6 +155,7 @@
 			files = (
 				632B7DD7209EF01100BF16E2 /* ViewController.swift in Sources */,
 				632B7DD5209EF01100BF16E2 /* AppDelegate.swift in Sources */,
+				6323FBF120A1651A006D0E08 /* Global_Functions.swift in Sources */,
 				634B3ECB20A01BE5008FC66E /* DataLoader.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
